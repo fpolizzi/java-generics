@@ -1,4 +1,4 @@
-package com.fpolizzi;
+package com.fpolizzi.generics;
 
 /**
  * Created by fpolizzi on 13.02.26
