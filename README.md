@@ -15,7 +15,7 @@
 
 ### Writing own Generics
 ```java
-    public class Box<T> {
+public class Box<T> {
 
     private T type;
 
