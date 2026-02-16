@@ -66,3 +66,34 @@ Even so, you can use a class and multiple interfaces in the bound. As in normal
 inheritance, the class takes precedence over the interfaces, and only one class 
 bound can be used, but multiple interfaces can be used.
 If a class is bound, this must stand in the first place.
+
+### Wildcard Type Parameter
+
+There are three wildcard types: `< ? >` unbound `< ? extends T >` upper and `< ? super T >` lower.
+The wildcard type `<?>` is used to represent any type. `<? extends T>` represents any type 
+that is a subtype of T. `<? super T>` represents any type that is a supertype of T.
+
+```java
+// Unbounded wildcard
+static void print(List<?> list) {
+    // Method implementation
+}
+
+// Upper bounded wildcard
+static void print(List<? extends Number> list) {
+    // Method implementation
+}
+
+// Lower bounded wildcard
+static void print(List<? super Number> list) {
+    // Method implementation
+}
+```
+
+### When to use bounded versus wildcard type parameters
+
+Use bounded type parameters (<T extends Number>) when you need to refer to the 
+type multiple times in a method or need to call methods on the type parameter. 
+Use wildcards (<? extends Number>) when you only need to refer to the type once 
+and don't need to call type-specific methods, making them ideal for simple 
+operations like reading from collections.
