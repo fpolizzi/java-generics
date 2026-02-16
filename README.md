@@ -92,8 +92,8 @@ static void print(List<? super Number> list) {
 
 ### When to use bounded versus wildcard type parameters
 
-Use bounded type parameters (<T extends Number>) when you need to refer to the 
+Use bounded type parameters (`<T extends Number>`) when you need to refer to the 
 type multiple times in a method or need to call methods on the type parameter. 
-Use wildcards (<? extends Number>) when you only need to refer to the type once 
+Use wildcards (`<? extends Number>`) when you only need to refer to the type once 
 and don't need to call type-specific methods, making them ideal for simple 
 operations like reading from collections.
