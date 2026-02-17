@@ -1,4 +1,4 @@
-package com.fpolizzi.generics;
+package com.fpolizzi.generics.boundedparameters;
 
 /**
  * Created by fpolizzi on 15.02.26

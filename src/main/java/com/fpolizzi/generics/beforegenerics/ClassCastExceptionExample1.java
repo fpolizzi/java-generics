@@ -1,4 +1,4 @@
-package com.fpolizzi.generics;
+package com.fpolizzi.generics.beforegenerics;
 
 import java.util.ArrayList;
 import java.util.List;

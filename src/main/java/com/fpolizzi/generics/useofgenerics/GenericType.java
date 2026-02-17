@@ -1,4 +1,4 @@
-package com.fpolizzi.generics;
+package com.fpolizzi.generics.useofgenerics;
 
 import java.util.ArrayList;
 import java.util.HashMap;

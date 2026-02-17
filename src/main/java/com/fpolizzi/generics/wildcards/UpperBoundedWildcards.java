@@ -1,4 +1,4 @@
-package com.fpolizzi.generics;
+package com.fpolizzi.generics.wildcards;
 
 import java.util.Arrays;
 import java.util.List;

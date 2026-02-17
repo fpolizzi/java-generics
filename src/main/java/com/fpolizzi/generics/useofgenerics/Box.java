@@ -1,4 +1,4 @@
-package com.fpolizzi.generics;
+package com.fpolizzi.generics.useofgenerics;
 
 /**
  * Created by fpolizzi on 14.02.26
