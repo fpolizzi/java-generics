@@ -97,3 +97,33 @@ type multiple times in a method or need to call methods on the type parameter.
 Use wildcards (`<? extends Number>`) when you only need to refer to the type once 
 and don't need to call type-specific methods, making them ideal for simple 
 operations like reading from collections.
+
+### Type Erasure
+
+Type erasure is a feature of Java generics that allows generic types to be used 
+without the need for explicit type parameters at runtime. This means that generic 
+types are replaced with their raw types at compile time, and the type information 
+is lost. This can lead to potential issues such as type safety violations and 
+runtime errors, but it also allows for more efficient code execution and better 
+interoperability with legacy code.
+
+```Java
+// Before erasure
+public class Box<T> {
+    private T value;
+}
+
+// After erasure
+public class Box {
+    private Object value;
+}
+```
+```Java
+// Before erasure
+Box<String> stringBox = new Box<>();
+String str = stringBox.getValue();
+
+// After erasure
+Box stringBox = new Box();
+String str = (String) stringBox.getValue();
+```
